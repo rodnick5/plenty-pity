@@ -59,4 +59,3 @@ arr.forEach(item => {
     closeIcon.classList.toggle('hidden-block');
     })
 })
-console.log(arr);
