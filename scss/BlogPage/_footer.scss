@@ -1,0 +1,194 @@
+footer {
+    width: 100%;
+    .form-contact-block {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        background-color: #f5f5f5;
+        .form-contact-bcg {
+            width: 100%;
+            height: 250px;
+            background-color: #eeeeee;
+            position: absolute;
+            bottom: 0;
+        }
+        .form-contact-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 1140px;
+            background-color: #1780c4;
+            margin: 0 0 50px 0;
+            .form-block {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 120px 86px 100px 86px;
+                .form-title {
+                    text-align: center;
+                    width: 100%;
+                    h3 {
+                        font-size: 30px;
+                    }
+                }
+                .form-dots {
+                    text-align: center;
+                    margin: 0 0 20px 0;
+                    p {
+                        font-size: 30px;
+                    }
+                }
+                .form-row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    .contacts-block {
+                        width: 30%;
+                        .contacts-wrap {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 10px;
+                            .contacts-title {
+                                h3 {
+                                    font-size: 25px;
+                                }
+                            }
+                            .subtitle-text {
+                                margin: 0 0 20px 0;
+                                p {
+                                    font-size: 15px;
+                                    margin: 0 0 1.75em 0;
+                                }
+                            }
+                            .info-subtitle {
+                                margin: 0 0 20px 0;
+                                h5 {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                    .inputs-block {
+                        width: 70%;
+                        .succes-send{
+                            margin: 20px 0 0 0;
+                            width: 100%;
+                            text-align: center;
+                            display: none;
+                            P{
+                                font-size: 16px;
+                                color: #a0a0a0;
+                            }
+                        }
+                        .inputs-wrap {
+                            width: 100%;
+                            padding: 0 50px;
+                            position: relative;
+                            form {
+                                width: 100%;
+                                .people-info-block {
+                                    padding: 10px 0;
+                                    width: 100%;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    column-gap: 20px;
+                                    .input-name {
+                                        display: block;
+
+                                        width: 100%;
+                                        input {
+                                            width: 100%;
+                                            padding: 0.75em;
+                                        }
+                                    }
+                                    .input-email {
+                                        width: 100%;
+                                        input {
+                                            width: 100%;
+                                            padding: 0.75em;
+                                        }
+                                    }
+                                }
+                                .contact-info-block {
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    .contact-input {
+                                        width: inherit;
+                                        input {
+                                            width: inherit;
+                                            padding: 0.75em;
+                                        }
+                                    }
+                                }
+                                .purpose-info-block {
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    .purpose-input {
+                                        width: inherit;
+                                        input {
+                                            width: inherit;
+                                            padding: 0.75em;
+                                        }
+                                    }
+                                }
+                                .message-info-block {
+                                    padding: 10px 0;
+
+                                    textarea {
+                                        width: 100%;
+                                        display: block;
+                                        height: 120px;
+                                        padding: 0.75em;
+                                    }
+                                }
+                                .button-block {
+                                    padding: 10px 0 0 0;
+                                    button {
+                                        cursor: pointer;
+                                        border: 0;
+                                        color: #1c93e2;
+                                        border-color: #ffffff;
+                                        background-color: #ffffff;
+                                        border-radius: 0px;
+                                        padding: 17px 30px;
+                                        font-size: 15px;
+                                        line-height: 1;
+                                        &:hover{
+                                            background-color: #cacaca;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright-info-block {
+        width: 100%;
+        background-color: #1a3446;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        .copyright-row {
+            width: 100%;
+            max-width: 1240px;
+            display: flex;
+            justify-content: space-between;
+            .copyright-left-block {
+                padding: 10px;
+                span {
+                    font-size: 15px;
+                }
+            }
+            .powered-right-block {
+                padding: 10px;
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

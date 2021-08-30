@@ -1,0 +1,473 @@
+#page {
+    .site-content {
+        #primary {
+            .site-main {
+                .electricy-man-block {
+                    position: relative;
+                    height: 892px;
+                    display: block;
+                    width: 100%;
+                    background-image: url("../img/electrician-1080586_960_720.jpg");
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    .electricy-block-bcg {
+                        background-color: #1c93e2;
+                        height: 100%;
+                        opacity: 0.85;
+                        z-index: 0;
+                    }
+                    .electricy-content-blocks {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        padding: 120px 0;
+                        z-index: 10;
+                        display: flex;
+                        justify-content: center;
+                        .electricy-container {
+                            max-width: 1140px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            .electricy-text-block {
+                                padding: 0 110px 0 10px;
+                                height: 100%;
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                h1 {
+                                    font-size: 48px;
+                                    color: #ffffff;
+                                    margin: 0 0 20px 0;
+                                }
+                                p {
+                                    margin: 0 0 50px 0;
+                                }
+                                .electricy-link {
+                                    width: 100%;
+                                    a {
+                                        line-height: 0.9;
+                                        width: auto;
+                                        float: left;
+                                        padding: 17px 30px;
+                                        background-color: #ffffff;
+                                        span {
+                                            line-height: 0.9;
+                                            color: #1c93e2;
+                                        }
+                                        i {
+                                            color: #1c93e2;
+                                            margin: 0 0 0 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .electricy-image-block {
+                                width: 50%;
+                                display: block;
+                                z-index: 10;
+                                padding: 10px;
+                                img {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .quality-work-block {
+                    background-color: #ffffff;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    .quality-work-wrap {
+                        padding: 100px 10px 10px 10px;
+                        max-width: 880px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        .quality-title {
+                            text-align: center;
+                            margin: 0 0 20px 0;
+                            h2 {
+                                margin: 0 0 30px 0;
+                                color: #000000;
+                                font-size: 42px;
+                            }
+                        }
+                        .quality-subtitile {
+                            margin: 0 0 20px 0;
+                            text-align: center;
+                            p {
+                                color: #000000;
+                                font-size: 15px;
+                                margin: 0 0 1.6em 0;
+                            }
+                        }
+                        .horizontal-line {
+                            padding: 50px 0 0 0;
+                            width: 100%;
+                            span {
+                                width: 100%;
+                                height: 1px;
+                                display: block;
+                                border-top: 1px solid #dbdbdb;
+                            }
+                        }
+                    }
+                }
+                .story-about-block {
+                    width: 100%;
+                    padding: 20px 0 20px 0;
+                    display: flex;
+                    justify-content: center;
+                    .story-container {
+                        max-width: 1000px;
+                        .story-side-blocks {
+                            display: flex;
+                            justify-content: center;
+                            .story-image-block {
+                                width: 50%;
+                                height: auto;
+                                .image-wrap {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-end;
+                                    padding: 10px;
+                                    img {
+                                        height: auto;
+                                        display: inline-block;
+                                        max-width: 100%;
+                                        margin: 47px 0 70px 0;
+                                    }
+                                }
+                            }
+                            .story-text-block {
+                                width: 50%;
+                                .text-wrap {
+                                    padding: 50px;
+
+                                    h4 {
+                                        color: #000000;
+                                        text-align: center;
+                                        font-size: 25px;
+                                        margin: 0 0 20px 0;
+                                    }
+                                    .subtext-wrap {
+                                        .upper-text {
+                                            color: #000000;
+                                            margin: 0 0 1.6em 0;
+                                        }
+                                        .down-text {
+                                            margin: 0 0 1.6em 0;
+                                            color: #000000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .services-about-block {
+                    width: 100%;
+                    height: auto;
+                    .services-row-blocks {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        .left-service-block {
+                            position: relative;
+                            height: auto;
+                            width: 33.333%;
+                            background-image: url("../img/NewHouse_SA_Photo_01.jpg");
+                            background-position: center center;
+                            background-size: cover;
+                            .service-left-bcg {
+                                position: absolute;
+                                background-color: #000000;
+                                opacity: 0.5;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .service-info {
+                                position: relative;
+                                height: 100%;
+                                width: 100%;
+                                padding: 4em;
+
+                                .service-title {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 0 20px 0;
+
+                                    .title-wrap {
+                                        text-align: center;
+                                        h5 {
+                                            font-size: 22px;
+                                        }
+                                    }
+                                }
+                                .service-subtitle {
+                                    .subtitle-wrap {
+                                        text-align: center;
+                                        padding: 0 50px;
+                                        p {
+                                            font-size: 15px;
+
+                                            margin: 0 0 1.6em 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .center-service-block {
+                            position: relative;
+                            height: auto;
+                            width: 33.333%;
+                            background-image: url("../img/3a417997b6740fc535c503aa5f73ce3a.jpg");
+                            background-position: center center;
+                            background-size: cover;
+                            .service-center-bcg {
+                                position: absolute;
+                                background-color: #1c93e2;
+                                opacity: 0.8;
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .service-info {
+                                position: relative;
+                                padding: 4em;
+                                height: 100%;
+                                width: 100%;
+
+                                .service-title {
+                                    display: flex;
+                                    margin: 0 0 20px 0;
+
+                                    justify-content: center;
+                                    .title-wrap {
+                                        text-align: center;
+                                        h5 {
+                                            font-size: 22px;
+                                        }
+                                    }
+                                }
+                                .service-subtitle {
+                                    text-align: center;
+
+                                    .subtitle-wrap {
+                                        padding: 0 50px;
+                                        text-align: center;
+                                        p {
+                                            font-size: 15px;
+
+                                            margin: 0 0 1.6em 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right-service-block {
+                            position: relative;
+                            width: 33.333%;
+                            height: auto;
+                            background-image: url("../img/manufacturing_-_operational_technology.jpg");
+                            background-position: center center;
+                            background-size: cover;
+                            .service-right-bcg {
+                                width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                display: block;
+                                background-color: #000000;
+                                opacity: 0.5;
+                            }
+                            .service-info {
+                                position: relative;
+                                padding: 4em;
+                                height: 100%;
+                                width: 100%;
+
+                                .service-title {
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 0 0 20px 0;
+                                    .title-wrap {
+                                        text-align: center;
+                                        h5 {
+                                            font-size: 22px;
+                                        }
+                                    }
+                                }
+                                .service-subtitle {
+                                    text-align: center;
+
+                                    .subtitle-wrap {
+                                        padding: 0 50px;
+                                        text-align: center;
+                                        p {
+                                            font-size: 15px;
+
+                                            margin: 0 0 1.6em 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .company-development-block {
+                    background-color: #f6f6f8;
+                    width: 100%;
+                    padding: 50px 0;
+                    display: flex;
+                    justify-content: center;
+                    .company-development-wrap {
+                        padding: 10px;
+                        .development-innovations-blocks {
+                            max-width: 1140px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            .product-about-block {
+                                padding: 35px;
+                                .product-block-wrap {
+                                    
+                                    .info-blocks {
+                                        display: flex;
+                                        flex-direction: column;
+                                        .image-product-block {
+                                            margin: 0 0 20px 0;
+                                            .image-wrap {
+                                                display: flex;
+                                                justify-content: center;
+                                                img {
+                                                }
+                                            }
+                                        }
+                                        .title-product-block {
+                                            margin:  0 0 20px 0;
+                                            .title-wrap {
+                                                text-align: center;
+                                                h5 {
+                                                    font-size: 18px;
+                                                    line-height: 1.7;
+                                                    color: #000000;
+                                                }
+                                            }
+                                        }
+                                        .subtitle-product-block {
+                                            .subtitle-wrap {
+                                                text-align: center;
+                                                p {
+                                                    font-size: 15px;
+                                                    color: #000000;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .company-features-block {
+                    padding: 120px 0;
+                    display: flex;
+                    justify-content: center;
+                    .company-features-wrap {
+                        max-width: 1140px;
+                        .features-row {
+                            display: grid;
+                            grid-template-columns: 1.6fr 1fr 1fr 1fr;
+                            .features-text-block {
+                                .features-text-wrap {
+                                    padding: 20px 0 0 0 ;
+                                    .title-feature {
+                                        margin: 0 0 20px 0;
+                                        h2 {
+                                            color: #000000;
+                                            font-size: 42px;
+                                        }
+                                    }
+                                    .image-feature {
+                                        margin: 0 0 20px 0;
+                                        img {
+                                        }
+                                    }
+                                    .subtitle-feature {
+                                        p {
+                                            color: #000000;
+                                            font-size: 15px;
+                                            line-height: 1.6;
+                                        }
+                                    }
+                                }
+                            }
+                            .information-feature-block {
+                                position: relative;
+                                margin: 10px 15px;
+                                &.left {
+                                    background-image: url("../img/management-wiring.jpg");
+                                    background-position: center right;
+                                    background-size: cover;
+                                }
+                                &.center {
+                                    background-image: url("../img/ElectriciansNov19_small.jpg");
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                &.right {
+                                    background-image: url("../img/unnamed.jpg");
+                                    background-position: center right;
+                                    background-size: cover;
+                                }
+                                .information-feature-bcg {
+                                    background-color: #000000;
+                                    position: absolute;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    opacity: 0.8;
+                                }
+                                .information-feature-wrap {
+                                    position: relative;
+                                    z-index: 10;
+                                    padding: 20px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    .information-image {
+                                        padding: 20px;
+                                        margin: 0 0 20px 0;
+                                        img {
+                                        }
+                                    }
+                                    .information-title {
+                                        margin: 0 0 20px 0;
+                                        text-align: center;
+                                        h5 {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                    .information-subtitle {
+                                        text-align: center;
+                                        margin: 0 0 1.6em 0;
+                                        p {
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+#page {
+    width: 100%;
+    position: relative;
+    header {
+        width: 100%;
+        background-color: #ffffff;
+        .main-header-bar-wrap {
+            width: 100%;
+            .container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .main-header-bar {
+                    max-width: 1240px;
+                    padding: 1em 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .logo-image-block {
+                        width: auto;
+                        a {
+                            
+                        }
+                    }
+                    .burger-menu-block{
+                        .menu-link{
+                            .menu-blog{
+                                display: block;
+                                font-size: 15px;
+                                font-family: 'Montserrat' , sans-serif;
+                            }
+                            i{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

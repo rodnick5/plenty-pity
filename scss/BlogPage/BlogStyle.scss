@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Montserrat' , sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul,
+ol {
+  list-style: none;
+}
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.container{
+    padding: 0 15px;
+}
+.require-field{
+  font-size: 0.9em;
+  color: #990000;
+  display: none;
+
+}
+.active-require{
+  display: block !important;
+}
+.hidden-block{
+display: none !important;
+}
+.anim-item {
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+}
+._active-item {
+  opacity: 1 !important;
+
+}
+._active-menu{
+    height: 42px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: rotateX(0deg) !important;
+    -webkit-transform: rotateX(0deg) !important;
+    -moz-transform: rotateX(0deg) !important;
+    -ms-transform: rotateX(0deg) !important;
+    -o-transform: rotateX(0deg) !important;
+}
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+._active-menu-btn{
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: auto !important;
+    height: auto !important;
+}
+@import '_header';
+@import '_content';
+@import '_footer';
+@import '_adaptive';
