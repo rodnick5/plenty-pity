@@ -490,12 +490,21 @@ select {
   background-size: cover;
 }
 
+#page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block:hover .service-left-bcg {
+  opacity: 0.65;
+}
+
 #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block .service-left-bcg {
   position: absolute;
   background-color: #000000;
   opacity: 0.5;
   width: 100%;
   height: 100%;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 
 #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block .service-info {
@@ -598,6 +607,10 @@ select {
   background-size: cover;
 }
 
+#page .site-content #primary .site-main .services-about-block .services-row-blocks .right-service-block:hover .service-right-bcg {
+  opacity: 0.65;
+}
+
 #page .site-content #primary .site-main .services-about-block .services-row-blocks .right-service-block .service-right-bcg {
   width: 100%;
   height: 100%;
@@ -605,6 +618,11 @@ select {
   display: block;
   background-color: #000000;
   opacity: 0.5;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 
 #page .site-content #primary .site-main .services-about-block .services-row-blocks .right-service-block .service-info {
@@ -777,16 +795,28 @@ select {
   background-size: cover;
 }
 
+#page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block.left:hover .information-feature-bcg {
+  opacity: 0.7;
+}
+
 #page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block.center {
   background-image: url("../img/ElectriciansNov19_small.jpg");
   background-position: center;
   background-size: cover;
 }
 
+#page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block.center:hover .information-feature-bcg {
+  opacity: 0.7;
+}
+
 #page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block.right {
   background-image: url("../img/unnamed.jpg");
   background-position: center right;
   background-size: cover;
+}
+
+#page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block.right:hover .information-feature-bcg {
+  opacity: 0.7;
 }
 
 #page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block .information-feature-bcg {
@@ -796,6 +826,11 @@ select {
   width: 100%;
   height: 100%;
   opacity: 0.8;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 }
 
 #page .site-content #primary .site-main .company-features-block .company-features-wrap .features-row .information-feature-block .information-feature-wrap {
@@ -1160,12 +1195,6 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   #page .site-content #primary .site-main .story-about-block .story-container .story-side-blocks .story-text-block .text-wrap {
     padding: 0 50px 50px 50px;
   }
-  #page .site-content #primary .site-main .services-about-block .services-row-blocks {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block {
     width: 100%;
   }
@@ -1241,6 +1270,23 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   }
   #page .site-content #primary .site-main footer .form-contact-block .form-contact-wrap .form-block .form-row .inputs-block .inputs-wrap {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container .electricy-image-block img {
+    width: 100%;
+  }
+  #page .site-content #primary .site-main .services-about-block .services-row-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=HomeStyle.css.map */
