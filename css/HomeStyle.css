@@ -100,6 +100,32 @@ select {
   opacity: 1 !important;
 }
 
+._active-menu {
+  height: 42px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: rotateX(0deg) !important;
+  -webkit-transform: rotateX(0deg) !important;
+  -moz-transform: rotateX(0deg) !important;
+  -ms-transform: rotateX(0deg) !important;
+  -o-transform: rotateX(0deg) !important;
+}
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+._active-menu-btn {
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: auto !important;
+  height: auto !important;
+}
+
 #page {
   width: 100%;
   position: relative;
@@ -108,6 +134,43 @@ select {
 #page header {
   width: 100%;
   background-color: #ffffff;
+}
+
+#page header .menu-block {
+  background-color: #f9f9f9;
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+#page header .menu-block .menu-link {
+  height: 100%;
+}
+
+#page header .menu-block .menu-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  color: #1c93e3;
 }
 
 #page header .main-header-bar-wrap {
@@ -146,10 +209,17 @@ select {
 #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .menu-link .menu-blog {
   display: block;
   font-size: 15px;
-  font-family: 'Montserrat' , sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #1c93e3;
 }
 
-#page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .menu-link i {
+#page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .close-icon {
+  color: #1c93e3;
+  display: block;
+}
+
+#page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .burger-icon {
+  color: #1c93e3;
   display: none;
 }
 
@@ -1036,21 +1106,29 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .menu-link .menu-blog {
     display: none;
   }
-  #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .menu-link i {
+  #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .burger-icon {
     display: block;
   }
   #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks {
-    padding: 50px 0;
+    padding: 20px;
   }
   #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container .electricy-text-block {
+    display: block;
     width: 100%;
-    padding: 0 50px;
+    height: 30%;
+    padding: 0 20px;
+  }
+  #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container .electricy-text-block h1 {
+    font-size: 36px;
   }
   #page .site-content #primary .site-main .electricy-man-block .electricy-content-blocks .electricy-container .electricy-image-block {
     width: 100%;
@@ -1082,6 +1160,15 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   #page .site-content #primary .site-main .story-about-block .story-container .story-side-blocks .story-text-block .text-wrap {
     padding: 0 50px 50px 50px;
   }
+  #page .site-content #primary .site-main .services-about-block .services-row-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block {
+    width: 100%;
+  }
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block .service-info {
     padding: 20px 5px 5px 5px;
   }
@@ -1094,6 +1181,9 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .left-service-block .service-info .service-subtitle .subtitle-wrap p {
     font-size: 11px;
   }
+  #page .site-content #primary .site-main .services-about-block .services-row-blocks .center-service-block {
+    width: 100%;
+  }
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .center-service-block .service-info {
     padding: 20px 5px 5px 5px;
   }
@@ -1105,6 +1195,9 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
   }
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .center-service-block .service-info .service-subtitle .subtitle-wrap p {
     font-size: 11px;
+  }
+  #page .site-content #primary .site-main .services-about-block .services-row-blocks .right-service-block {
+    width: 100%;
   }
   #page .site-content #primary .site-main .services-about-block .services-row-blocks .right-service-block .service-info {
     padding: 20px 5px 5px 5px;
