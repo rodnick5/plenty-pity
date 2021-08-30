@@ -21,8 +21,7 @@
             -moz-transition: 0.5s;
             -ms-transition: 0.5s;
             -o-transition: 0.5s;
-            .menu-link
-{
+            .menu-link {
                 height: 100%;
                 a {
                     display: flex;
@@ -50,7 +49,6 @@
 
                     .logo-image-block {
                         width: auto;
-                        
                     }
                     .burger-menu-block {
                         .menu-link {
@@ -62,11 +60,12 @@
                             }
                         }
                         .close-icon {
+                            cursor: pointer;
                             color: #1c93e3;
                             display: block;
                         }
-                        .burger-icon{
-                            
+                        .burger-icon {
+                            cursor: pointer;
                             color: #1c93e3;
                             display: none;
                         }

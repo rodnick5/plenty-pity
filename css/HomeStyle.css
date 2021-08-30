@@ -126,6 +126,24 @@ select {
   height: auto !important;
 }
 
+input[type=email], input[type=number], input[type=password], input[type=reset], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+  color: #666;
+  padding: .75em;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
+  resize: none;
+  background: #fafafa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+}
+
 #page {
   width: 100%;
   position: relative;
@@ -214,11 +232,13 @@ select {
 }
 
 #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .close-icon {
+  cursor: pointer;
   color: #1c93e3;
   display: block;
 }
 
 #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .burger-icon {
+  cursor: pointer;
   color: #1c93e3;
   display: none;
 }

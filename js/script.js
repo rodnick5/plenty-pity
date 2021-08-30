@@ -6,11 +6,16 @@ let btnSubmit = document.querySelector('.btn-submit');
 btnSubmit.addEventListener('click', function checkForm(){
     let sendText = document.querySelector('.succes-send');
     let blockInputs = document.querySelector('.inputs-wrap');
-    inputs = document.querySelectorAll('.inputs');
-    inputs.forEach(item => {
-        if(item.value == null || item.value == ''){
+    let inputs = document.querySelectorAll('.inputs');
+    let inputsValues = [];
+    for(let key of inputs){
+      inputsValues.push(key.value);
+    }
+    inputs.forEach(item => {  
+        if(!item.value){
            item.nextElementSibling.classList.add('active-require');
-        } else {
+        } 
+        if(_.all(inputsValues)) {
             btnSubmit.textContent = 'Sending';
             setTimeout(() => {
                 blockInputs.classList.add('hidden-block');
@@ -48,14 +53,11 @@ if (animItems.length > 0) {
   animOnScroll();
 }
 
-let burgerIcon = document.querySelector('.burger-icon');
-let closeIcon = document.querySelector('.close-icon');
-let arr = [burgerIcon , closeIcon];
-arr.forEach(item => {
+let menuIcons = document.querySelectorAll('.menu-icon');
+menuIcons.forEach(item => {
     item.addEventListener('click', () => {
-    let menuBlock = document.querySelector('.menu-block');
-    menuBlock.classList.toggle('_active-menu');
-    burgerIcon.classList.toggle('hidden-block');
-    closeIcon.classList.toggle('hidden-block');
+    document.querySelector('.menu-block').classList.toggle('_active-menu');
+    document.querySelector('.burger-icon').classList.toggle('hidden-block');
+    document.querySelector('.close-icon').classList.toggle('hidden-block');
     })
 })
