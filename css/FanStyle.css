@@ -131,6 +131,7 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
   padding: .75em;
   border: 1px solid #eaeaea;
   border-radius: 2px;
+  resize: none;
   background: #fafafa;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -251,7 +252,7 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
 }
 
 #page .site-content #primary {
-  padding: 4em 0 0 0;
+  padding: 4em 0 4em 0;
   width: 100%;
   background-color: #f5f5f5;
   display: -webkit-box;
@@ -347,7 +348,7 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
 #page .site-content #primary .site-main .post-change-block {
   background-color: #f5f5f5;
   width: 100%;
-  padding: 2em 3.33em 0 3.33em;
+  padding: 2em 3.33em 2em 3.33em;
 }
 
 #page .site-content #primary .site-main .post-change-block .post-change-wrap {
@@ -377,9 +378,60 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
   font-size: 15px;
 }
 
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .textarea-block {
+  margin: 0 0 1.5em 0;
+}
+
 #page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .textarea-block .texarea-wrap textarea {
+  margin: 0 0 10px 0;
+  width: 100%;
   color: #666;
   background: #fafafa;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .information-block {
+  width: 100%;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .information-block .information-wrap {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .information-block .information-wrap .input-wrap {
+  margin: 0 0 1.75em 0;
+  width: 100%;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .information-block .information-wrap .input-wrap input {
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block {
+  margin: 0 0 1.75em;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block input {
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block p {
+  display: inline-block;
+  color: #192730;
+  font-size: 15px;
+}
+
+#page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .button-post-block button {
+  color: #1c93e3;
+  border: none;
+  background-color: inherit;
 }
 
 footer {
