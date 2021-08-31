@@ -366,10 +366,6 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
   font-size: 15px;
 }
 
-#page .site-content #primary .site-main .post-change-block .post-change-wrap .change-link.prev {
-  visibility: hidden;
-}
-
 #page .site-content #primary .site-main .comment-form-block .comment-form-wrap {
   padding: 4em 6.67em;
 }
@@ -759,4 +755,4 @@ footer .copyright-info-block .copyright-row .powered-right-block span {
     font-size: 12px;
   }
 }
-/*# sourceMappingURL=FanStyle.css.map */
+/*# sourceMappingURL=StartupStyle.css.map */
