@@ -415,15 +415,16 @@ input[type=email], input[type=number], input[type=password], input[type=reset], 
 
 #page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block {
   margin: 0 0 1.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block input {
-  display: inline-block;
   margin: 0 10px 0 0;
 }
 
 #page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .check-block p {
-  display: inline-block;
   color: #192730;
   font-size: 15px;
 }
@@ -698,5 +699,49 @@ footer .copyright-info-block .copyright-row .powered-right-block {
 
 footer .copyright-info-block .copyright-row .powered-right-block span {
   font-size: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .menu-link .menu-blog {
+    display: none;
+  }
+  #page header .main-header-bar-wrap .container .main-header-bar .burger-menu-block .burger-icon {
+    display: block;
+  }
+  #page .site-content #primary .site-main .blogs-block .blogs-wrap .post-block .post-wrap {
+    padding: 3.34em 2.4em;
+  }
+  #page .site-content #primary .site-main .comment-form-block .comment-form-wrap {
+    padding: 3em 2.34em;
+  }
+  footer .form-contact-block .form-contact-wrap .form-block {
+    padding: 20px;
+  }
+  footer .form-contact-block .form-contact-wrap .form-block .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .form-contact-block .form-contact-wrap .form-block .form-row .contacts-block {
+    width: 100%;
+  }
+  footer .form-contact-block .form-contact-wrap .form-block .form-row .inputs-block {
+    width: 100%;
+  }
+  footer .form-contact-block .form-contact-wrap .form-block .form-row .inputs-block .inputs-wrap {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #page .site-content #primary .site-main .comment-form-block .comment-form-wrap .form-block .information-block .information-wrap {
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
 }
 /*# sourceMappingURL=FanStyle.css.map */
